@@ -13,5 +13,3 @@ doi: "10.21468/SciPostPhys.19.1.003"
 inspireId: 2790368
 order: 105
 ---
-
-INSPIRE record: https://inspirehep.net/literature/2790368

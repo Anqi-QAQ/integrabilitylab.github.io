@@ -9,5 +9,3 @@ doi: "10.21468/SciPostPhys.12.6.191"
 inspireId: 1827490
 order: 125
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1827490

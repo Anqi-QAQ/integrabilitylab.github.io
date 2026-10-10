@@ -32,3 +32,5 @@ pnpm-debug.log*
 # editor settings
 .idea/
 .vscode/
+# WorkBuddy local files
+.workbuddy-ai/

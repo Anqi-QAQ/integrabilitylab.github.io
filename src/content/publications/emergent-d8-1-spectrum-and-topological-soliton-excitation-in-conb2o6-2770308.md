@@ -14,5 +14,3 @@ doi: "10.1103/f32m-kkzm"
 inspireId: 2770308
 order: 106
 ---
-
-INSPIRE record: https://inspirehep.net/literature/2770308

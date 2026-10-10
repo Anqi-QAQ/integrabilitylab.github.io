@@ -26,7 +26,7 @@ const sections = headings.filter(heading => heading.depth === 2);
         {(person.data.email || person.data.website) && <div class="info-section">
           <h2>Contact</h2>
           {person.data.email && <a class="contact-link" href={`mailto:${person.data.email}`}>{person.data.email}</a>}
-          {person.data.website && <a class="contact-link" href={person.data.website}>Institutional profile ↗</a>}
+          {person.data.website && <a class="contact-link" href={person.data.website}>{person.data.website.includes("seu.edu.cn") ? "Institutional profile" : "Personal website"} ↗</a>}
         </div>}
         {person.data.interests.length > 0 && <div class="info-section">
           <h2>Research interests</h2>

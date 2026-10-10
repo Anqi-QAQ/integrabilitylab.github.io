@@ -12,5 +12,3 @@ doi: "10.1103/nlmd-b57j"
 inspireId: 2842850
 order: 2
 ---
-
-INSPIRE record: https://inspirehep.net/literature/2842850

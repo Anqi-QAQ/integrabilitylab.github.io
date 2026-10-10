@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 
 const { publication } = Astro.props;
 const { Content } = await render(publication);
+const arxivId = publication.data.arxiv?.replace(/^https?:\/\/arxiv\.org\/abs\//, "");
 ---
 
 <ContentLayout
@@ -21,9 +22,12 @@ const { Content } = await render(publication);
   metaDescription={publicationDescription(publication.data)}
   eyebrow={`${publication.data.year}`}
 >
-  <p class="meta">{publication.data.authors.join(", ")}</p>
-  {publication.data.venue && <p>{publication.data.venue}</p>}
-  {publication.data.arxiv && <p>arXiv: <a href={publication.data.arxiv}>{publication.data.arxiv}</a></p>}
-  {publication.data.doi && <p>DOI: <a href={`https://doi.org/${publication.data.doi}`}>{publication.data.doi}</a></p>}
+  <div class="publication-meta">
+    <p class="meta">{publication.data.authors.join(", ")}</p>
+    {publication.data.venue && <p>{publication.data.venue}</p>}
+    {publication.data.arxiv && <p>arXiv: <a href={publication.data.arxiv}>{arxivId}</a></p>}
+    {publication.data.doi && <p>DOI: <a href={`https://doi.org/${publication.data.doi}`}>{publication.data.doi}</a></p>}
+    {publication.data.inspireId && <p>INSPIRE: <a href={`https://inspirehep.net/literature/${publication.data.inspireId}`}>Record ↗</a></p>}
+  </div>
   <Content />
 </ContentLayout>

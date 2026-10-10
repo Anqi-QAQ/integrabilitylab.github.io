@@ -6,7 +6,7 @@ import { usefulLinks } from "../data/usefulLinks";
     <li>
       <a href={link.url}>
         <span class="logo"><img src={link.logo} alt="" width="56" height="56" loading="lazy" /></span>
-        <span class="link-copy"><span class="name" lang="zh-CN">{link.name}</span><span class="domain">{link.domain}</span></span>
+        <span class="link-copy"><span class="name" lang={link.lang}>{link.name}</span><span class="domain">{link.domain}</span></span>
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
     </li>

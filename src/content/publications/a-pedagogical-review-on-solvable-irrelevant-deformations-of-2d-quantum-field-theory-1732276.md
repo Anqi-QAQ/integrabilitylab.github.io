@@ -9,5 +9,3 @@ doi: "10.1088/1572-9494/abe4c9"
 inspireId: 1732276
 order: 131
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1732276

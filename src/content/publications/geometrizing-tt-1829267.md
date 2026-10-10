@@ -13,6 +13,5 @@ inspireId: 1829267
 order: 124
 ---
 
-INSPIRE record: https://inspirehep.net/literature/1829267
 
 Erratum: https://doi.org/10.1007/JHEP09(2022)110

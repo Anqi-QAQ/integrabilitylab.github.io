@@ -11,5 +11,3 @@ doi: "10.1007/JHEP03(2020)092"
 inspireId: 1766894
 order: 128
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1766894

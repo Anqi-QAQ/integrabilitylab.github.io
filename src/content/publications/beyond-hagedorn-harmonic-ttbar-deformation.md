@@ -12,5 +12,3 @@ doi: "10.1103/kcs1-7q6n"
 inspireId: 3148108
 order: 1
 ---
-
-INSPIRE record: https://inspirehep.net/literature/3148108

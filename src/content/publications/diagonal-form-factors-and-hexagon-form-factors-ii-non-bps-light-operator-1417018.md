@@ -9,5 +9,3 @@ doi: "10.1007/JHEP01(2017)021"
 inspireId: 1417018
 order: 144
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1417018

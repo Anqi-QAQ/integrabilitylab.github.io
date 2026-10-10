@@ -12,5 +12,3 @@ doi: "10.1088/1751-8113/49/17/174007"
 inspireId: 1380481
 order: 146
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1380481

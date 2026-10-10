@@ -41,12 +41,17 @@
 [hidden] { display: none !important; }
 body {
   margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background: var(--background);
   color: var(--text);
   font-family: var(--font-body);
   font-size: var(--text-body);
   line-height: 1.6;
 }
+main { flex: 1; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-strong); text-decoration: underline; }
 :where(a, button, input, summary):focus-visible {
@@ -74,16 +79,14 @@ h1 { font-family: var(--font-editorial); font-weight: 400; }
 .lead { max-width: var(--width-reading); color: var(--muted); font-size: var(--text-lead); }
 .grid { display: grid; gap: 1.25rem; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-.card {
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  background: var(--surface);
-  padding: 1.25rem;
-  box-shadow: 0 1px 2px color-mix(in srgb, var(--text) 6%, transparent), 0 6px 20px color-mix(in srgb, var(--text) 8%, transparent);
-}
 .stack { display: grid; gap: var(--space-2); }
 .meta { color: var(--muted); font-size: var(--text-meta); }
-.content-entry { padding-block: var(--space-3); border-top: 1px solid var(--border); }
+.content-entry {
+  padding-block: var(--space-3);
+  border-top: 1px solid var(--border);
+  margin-inline: calc(-1 * var(--space-2));
+  padding-inline: var(--space-2);
+}
 .content-entry > :first-child { margin-top: 0; }
 .content-entry > p:last-child { margin-bottom: 0; }
 .content-entry :is(h2, h3) { max-width: 52ch; }
@@ -91,10 +94,6 @@ h1 { font-family: var(--font-editorial); font-weight: 400; }
 /* Shared hover language for list entries: a soft wash that extends slightly
    beyond the text column, plus a title color shift. (.person-card sets its
    own margin/padding offset because its scoped shorthand wins specificity.) */
-.content-entry {
-  margin-inline: calc(-1 * var(--space-2));
-  padding-inline: var(--space-2);
-}
 .content-entry, .person-card {
   transition: background-color .18s ease;
 }
@@ -134,6 +133,14 @@ h1 { font-family: var(--font-editorial); font-weight: 400; }
 .prose strong { font-weight: 600; }
 .prose :where(p, ul:not([class]) > li, ol:not([class]) > li, address) a { text-decoration: underline; text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
 .prose blockquote { margin: 1.8em 0; border-left: 3px solid var(--accent); padding: .5em 1.5em; color: var(--muted); }
+.publication-meta {
+  margin-block: 0 2rem;
+  padding-block: .85rem;
+  border-block: 1px solid var(--border);
+}
+.publication-meta p { margin: .35em 0; }
+.publication-meta p:first-child { margin-top: 0; }
+.publication-meta p:last-child { margin-bottom: 0; }
 
 .skip-link {
   position: absolute;
