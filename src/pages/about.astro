@@ -4,18 +4,42 @@ import UsefulLinks from "../components/UsefulLinks.astro";
 import { site } from "../data/site";
 ---
 
-<ContentLayout title="About" description={site.description} metaDescription="About the Laboratory of Quantum Integrability at Southeast University in Nanjing, China. Research in integrable systems and mathematical physics, contact details and institutional links.">
+<ContentLayout title="About" eyebrow="The Laboratory" wide description={site.description} metaDescription="About the Laboratory of Quantum Integrability at Southeast University in Nanjing, China. Research in integrable systems and mathematical physics, contact details and institutional links.">
   <p>
     Integrability Lab studies integrable systems, mathematical physics, and
     related structures in quantum field theory and statistical mechanics.
   </p>
 
   <h2 id="contact">Contact</h2>
-  <address>
-    <strong>Address:</strong> 15th floor, Yifu Architecture Building, Sipailou
-    Campus, Southeast University, Nanjing, Jiangsu Province, China
+  <address class="contact-card">
+    <p class="contact-label">Address</p>
+    <p class="contact-lines">
+      15th floor, Yifu Architecture Building<br />
+      Sipailou Campus, Southeast University<br />
+      Nanjing, Jiangsu Province, China
+    </p>
   </address>
 
   <h2>Useful Links</h2>
   <UsefulLinks />
 </ContentLayout>
+<style>
+  .contact-card {
+    margin: 0;
+    padding: var(--space-3);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    font-style: normal;
+    max-width: var(--width-reading);
+  }
+  .contact-card p { margin: 0; }
+  .contact-label {
+    color: var(--accent-strong);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .contact-lines { margin-top: var(--space-1); line-height: 1.9; }
+</style>

@@ -8,13 +8,15 @@ interface Props {
   metaDescription?: string;
   eyebrow?: string;
   lang?: "en" | "zh-CN";
+  /** Use the full detail width instead of the centered reading column. */
+  wide?: boolean;
 }
 
-const { title, description, metaDescription = description, eyebrow, lang } = Astro.props;
+const { title, description, metaDescription = description, eyebrow, lang, wide = false } = Astro.props;
 ---
 
 <BaseLayout title={title} description={metaDescription} lang={lang}>
-  <article class="container page reading-page">
+  <article class:list={["container", "page", "reading-page", { wide }]}>
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h1 class="page-title"><InlineMathText text={title} /></h1>
     {description && <p class="lead"><InlineMathText text={description} /></p>}
@@ -24,8 +26,30 @@ const { title, description, metaDescription = description, eyebrow, lang } = Ast
   </article>
 </BaseLayout>
 <style>
+  /* Article pages read as one centered column: title, lead and prose share
+     the same left and right edges, so the page no longer leans left. */
   .reading-page {
+    width: min(72ch, calc(100% - 40px));
+  }
+
+  .reading-page.wide {
     width: min(var(--width-detail), calc(100% - 40px));
+  }
+
+  /* Newspaper-style headline: the title may run past the text measure on the
+     right so long titles set in fuller lines, but the overhang is capped at
+     the gutter that actually exists beside the centered column (minus a 2rem
+     safety margin). Without this cap the widened title box overflows the
+     viewport and adds a horizontal scrollbar. 100% = the column width, so
+     (100vw - 100%) / 2 is the real gutter on each side. Below 860px the
+     column fills the screen and the overhang is dropped entirely. */
+  .reading-page:not(.wide) .page-title {
+    margin-right: max(-12ch, calc(-1 * ((100vw - 100%) / 2 - 2rem)));
+    font-size: clamp(2rem, 3.8vw, 2.6rem);
+    line-height: 1.2;
+  }
+  @media (max-width: 860px) {
+    .reading-page:not(.wide) .page-title { margin-right: 0; }
   }
 
   .page-title { text-wrap: balance; }

@@ -62,7 +62,7 @@ const sections = headings.filter(heading => heading.depth === 2);
   }
   .contact-link { display: block; font-size: var(--text-small); margin-top: var(--space-1); overflow-wrap: anywhere; }
   .interests { display: flex; flex-wrap: wrap; gap: var(--space-1); list-style: none; padding: 0; margin: 0; }
-  .interests li { padding: 5px 9px; background: #eaf0e6; font-size: .8rem; border-radius: 3px; }
+  .interests li { padding: 5px 9px; background: var(--tint); font-size: .8rem; border-radius: 3px; }
   .contents { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .625rem var(--space-3); }
   .contents h2 { flex-basis: 100%; margin-bottom: 0; }
   .contents a { font-size: var(--text-small); }
@@ -91,7 +91,7 @@ const sections = headings.filter(heading => heading.depth === 2);
   .profile-body :global(.career-entry p + p) { margin-top: 4px; }
   .profile-body :global(.career-role) { font-weight: 600; color: var(--accent-strong); }
   .profile-body :global(.career-location) { color: var(--muted); font-size: var(--text-meta); }
-  .profile-body :global(.poem-center) { max-width: var(--width-reading); padding: 1.75rem var(--space-2); margin-block: 2em; text-align: center; background: #edf0e7; font-family: Georgia, "Songti SC", SimSun, serif; }
+  .profile-body :global(.poem-center) { max-width: var(--width-reading); padding: 1.75rem var(--space-2); margin-block: 2em; text-align: center; background: var(--tint-alt); font-family: Georgia, "Songti SC", SimSun, serif; }
   .profile-body :global(.poem-center p:last-child) { margin-bottom: 0; }
   @media (max-width: 640px) {
     aside { grid-template-columns: 1fr; gap: var(--space-3); }

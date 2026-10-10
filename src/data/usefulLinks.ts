@@ -8,7 +8,7 @@ export const usefulLinks = [
   },
   {
     name: "东南大学物理学院",
-    url: "https://physics.seu.edu.cn/mainm.htm",
+    url: "https://physics.seu.edu.cn/",
     domain: "physics.seu.edu.cn",
     logo: "/images/links/southeast-university.svg",
   },
@@ -21,7 +21,7 @@ export const usefulLinks = [
   {
     name: "Yang Zhang@USTC",
     url: "http://staff.ustc.edu.cn/~yzhphy/index.html",
-    domain: "staff.ustc.edu.cn/~yzhphy",
+    domain: "staff.ustc.edu.cn",
     logo: "/images/links/ustc-yang-zhang.ico",
   },
 ];
