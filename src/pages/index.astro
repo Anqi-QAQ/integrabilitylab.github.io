@@ -37,7 +37,7 @@ const updates = [...await getCollection("news"), ...await getCollection("events"
   .spin-strip { display:flex; align-items:center; justify-content:space-between; gap:24px; border-block:1px solid var(--border); padding-block:22px; font:10px/1.5 ui-monospace,monospace; letter-spacing:.1em; color:var(--muted); }
   .chain { display:flex; align-items:center; flex:1; max-width:340px; justify-content:space-between; position:relative; }
   .chain:before { content:''; position:absolute; height:1px; background:var(--border); width:100%; }
-  .chain span { position:relative; border:1px solid #9bab9e; border-radius:50%; width:19px; height:19px; background:var(--background); text-align:center; color:var(--accent); font-size:12px; }
+  .chain span { position:relative; border:1px solid var(--spin-border); border-radius:50%; width:19px; height:19px; background:var(--background); text-align:center; color:var(--accent); font-size:12px; }
   .updates { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-5); padding-block:var(--space-5); }
   .section-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:22px; }
   .section-heading h2 { font:normal 1.75rem var(--font-editorial); margin:0; }

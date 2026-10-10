@@ -12,5 +12,3 @@ doi: "10.1103/hg9p-hblr"
 inspireId: 2906210
 order: 1
 ---
-
-INSPIRE record: https://inspirehep.net/literature/2906210

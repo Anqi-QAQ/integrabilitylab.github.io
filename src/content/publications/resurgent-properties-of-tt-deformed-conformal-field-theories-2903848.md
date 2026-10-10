@@ -11,5 +11,3 @@ doi: "10.1103/dvwg-9jcy"
 inspireId: 2903848
 order: 102
 ---
-
-INSPIRE record: https://inspirehep.net/literature/2903848

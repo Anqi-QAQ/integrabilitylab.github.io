@@ -12,5 +12,3 @@ doi: "10.1016/j.nuclphysb.2015.05.029"
 inspireId: 1325586
 order: 149
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1325586

@@ -4,14 +4,13 @@ role: "Postdoctoral Researcher"
 category: "postdocs"
 avatar: "/images/people/qian-xin.png"
 email: "xinqian@seu.edu.cn"
+website: "https://superqx.github.io/"
 interests:
   - Integrable structures in N=4 SYM and ABJM theory
   - Integrable quantum field theories
   - Quantum many-body systems out of equilibrium
 order: 2
 ---
-
-[Personal website](https://superqx.github.io/)
 
 QIAN Xin joined Prof. Yunfeng Jiang's group at Southeast University as a postdoctoral researcher in 2026, after earning a Ph.D. from the University of Copenhagen in 2025 under the supervision of Prof. Charlotte Fløe Kristjansen.
 

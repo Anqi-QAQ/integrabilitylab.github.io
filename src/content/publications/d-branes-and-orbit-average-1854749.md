@@ -12,5 +12,3 @@ doi: "10.21468/SciPostPhys.12.2.055"
 inspireId: 1854749
 order: 121
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1854749

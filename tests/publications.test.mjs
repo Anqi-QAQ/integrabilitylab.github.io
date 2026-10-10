@@ -23,6 +23,5 @@ test("publications contain no duplicate papers or repeated authors", () => {
     assert.ok(Number.isInteger(publication.year), `${file} has no publication year`);
     const authors = publication.authors.map((author) => author.normalize("NFKD").toLowerCase());
     assert.equal(new Set(authors).size, authors.length, `${file} repeats an author`);
-    if (publication.inspireId) assert.ok(source.includes(`/literature/${publication.inspireId}`), `${file} links to a different INSPIRE record`);
   }
 });

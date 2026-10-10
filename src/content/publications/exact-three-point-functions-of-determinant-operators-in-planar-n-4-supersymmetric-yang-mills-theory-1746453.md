@@ -11,5 +11,3 @@ doi: "10.1103/PhysRevLett.123.191601"
 inspireId: 1746453
 order: 129
 ---
-
-INSPIRE record: https://inspirehep.net/literature/1746453
